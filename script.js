@@ -1,6 +1,6 @@
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
-var cssHeader = document.querySelector("css"); 
+var cssHeader = document.querySelector(".css"); 
 var body = document.getElementById("gradient");
 
 
@@ -10,6 +10,8 @@ function gradient() {
     + "," 
     + color2.value 
     + ")"; 
+
+    cssHeader.textContent = body.style.background + ";";
 }
 
 color1.addEventListener("input", gradient);
