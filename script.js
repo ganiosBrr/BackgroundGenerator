@@ -4,15 +4,15 @@ var cssHeader = document.querySelector(".css");
 var body = document.getElementById("gradient");
 
 
+
 function gradient() {
-    body.style.background = "linear-gradient(to right," 
+    cssHeader.textContent = body.style.background = "linear-gradient(to right," 
     + color1.value 
     + "," 
     + color2.value 
-    + ")"; 
-
-    cssHeader.textContent = body.style.background + ";";
+    + ")";   
 }
 
+document.addEventListener("DOMContentLoaded", gradient);
 color1.addEventListener("input", gradient);
 color2.addEventListener("input", gradient);
